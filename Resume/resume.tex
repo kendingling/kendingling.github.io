@@ -1,0 +1,207 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-------------------HEADING----------------------
+
+\begin{center}
+    \textbf{\Huge \scshape Kending Ling} \\ \vspace{1pt}
+    \small Sudbury, ON $|$ {{kendingling@outlook.com}}  
+\end{center}
+
+
+%------------------EDUCATION---------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Laurentian University}{Sudbury, Canada}
+      {Master of Science in Computational Science}{Sep 2023 -- Oct 2024}
+    \resumeSubheading
+      {Southwest Jiaotong University}{Chengdu, China}
+      {Bachelor of Science in Electronic Engineering}{Sep 2012 -- Jun 2016}
+  \resumeSubHeadingListEnd
+
+%-------------------EXPERIENCE------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Assistant}{Sep 2016 -- Mar 2023}
+      {Zhejiang University}{Hangzhou, China}
+      \resumeItemListStart
+        \resumeItem{College of Information Science and Electronic Engineering, Laboratory of Applied Research on Electromagnetics}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+    \resumeSubheading
+      {Intern Engineer}{Sep 2021 -- Oct 2021}
+      {SAIC-GM Pan Asia Automotive Technology Center (PATAC)}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Electronic Architecture Section of Electronic System and Software Department }
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Leadership}{Fall 2018 and Spring 2019}
+    {Zhejiang University}{Hangzhou, China}
+    \resumeItemListStart
+      \resumeItem{Leader of the 32nd and 33rd Piaomiao Trail walk activity organizing committee, thousands of people participated each time.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Volunteer}{Sep 2021}
+    {Southwest Jiaotong University}{Chengdu, China}
+    \resumeItemListStart
+      \resumeItem{Volunteer at the 11th Singapore-China Joint Symposium on Research Frontiers in Physics}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------------------PROGRAMMING SKILLS-------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Typing Speed}{: 65 - 75 WPM in TypeRacer, top 15\% - 20\% fastest} \\
+     \textbf{Software}{: Microsoft Office (Word, PowerPoint, Excel), Adobe Illustrator, PyCharm, VSCode, Cadence} \\
+     \textbf{Programming Languages}{: C, C++, Python, MATLAB} \\
+     \textbf{RF instruments}{: Vector network analyzer, RF signal generator, oscilloscope, spectrum analyzer etc.}
+    }}
+ \end{itemize}
+
+
+%-------------------PROJECTS---------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {{1.	Research on microwave wireless energy transmission system}}
+
+      \resumeProjectHeading
+          {{2.	Research and development of multi-carrier micro-discharge threshold analysis software}}
+
+      \resumeProjectHeading
+          {{3.	Hardware research and development of class F GaN two-stage power amplifier}}
+
+    \resumeSubHeadingListEnd
+
+%----------------------PUBLICATIONS-----------------------
+\section{Publications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {1.	Wireless Power Transfer Self-Adaptive to Incident Power Density,International Journal of RF and Microwave Computer-\\
+          Aided Engineering, SCI, Published, First author}
+      
+      \resumeProjectHeading
+          {2.	Rectifying Surface Implemented with a Coupled Array, 2020 IEEE Radio and Wireless Symposium (RWS), San Antonio,\\
+          TX, USA, Oral Presentation, EI, Published, First author}
+
+      \resumeProjectHeading
+          {3.	Computer software copyright, Multi-carrier micro-discharge threshold analysis software V1.0, Authorized, First author}
+
+      \resumeProjectHeading
+          {4.	Invention patent, An adaptive microwave energy receiving surface based on conjugate matching, Authorized, First author}
+
+    \resumeSubHeadingListEnd
+
+%-------------------Honors and awards---------------------
+\section{Honors and awards}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {{Award of Honor for Graduate Award, Outstanding Volunteer at School Level, National Scholarship, Merit student}}
+
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
